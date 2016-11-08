@@ -1,0 +1,13 @@
+{
+  "name": "dstore-node-tadys",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "dstore-sdk-node": "1.2.2",
+    "decimal": "https://github.com/MikeMcl/decimal.js#v5.0.8",
+    "mocha": "3.1.2"
+  }
+}
