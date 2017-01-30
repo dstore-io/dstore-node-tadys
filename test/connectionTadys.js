@@ -1,5 +1,5 @@
 var assert = require('assert');
-var services = require('dstore-sdk-node/dstore/engine/procedures/engineProc_grpc_pb');
+var services = require('dstore-sdk-node/dstore/engine/procedures/engine_proc_service_grpc_pb');
 var credentials = require('./credentials.js').credentialsAdmin;
 
 describe('ConnectionTaDys', function () {

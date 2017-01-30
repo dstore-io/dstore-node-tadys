@@ -1,5 +1,5 @@
 var assert = require('assert');
-var services = require('dstore-sdk-node/dstore/engine/procedures/engineProc_grpc_pb');
+var services = require('dstore-sdk-node/dstore/engine/procedures/engine_proc_service_grpc_pb');
 var grpc = require('grpc');
 var Decimal = require('decimal.js');
 var valuesHelper = require('dstore-sdk-node/dstore/helper/valuesHelper.js');
@@ -42,7 +42,7 @@ describe('ExecuteProcedureTaDys', function () {
             var resultWithResultRowsExists = false;
 
             var parameters = new miDataTypeTest.Parameters();
-            parameters.setGetResultSet(new values.booleanValue().setValue(true));
+            parameters.setGetResultSet(new values.BooleanValue().setValue(true));
 
             var call = engineProcClient.mi_DatatypeTest_Ad(parameters);
 
@@ -70,8 +70,8 @@ describe('ExecuteProcedureTaDys', function () {
             var testChar;
 
             var parameters = new miDataTypeTest.Parameters();
-            parameters.setGetResultSet(new values.booleanValue().setValue(false));
-            parameters.setSetOutputParams(new values.booleanValue().setValue(true));
+            parameters.setGetResultSet(new values.BooleanValue().setValue(false));
+            parameters.setSetOutputParams(new values.BooleanValue().setValue(true));
 
             var call = engineProcClient.mi_DatatypeTest_Ad(parameters);
 
